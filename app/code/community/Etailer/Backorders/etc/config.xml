@@ -15,6 +15,11 @@
                     <stock_item>Etailer_Backorders_Model_Stock_Item</stock_item>
                 </rewrite>
             </cataloginventory>
+            <reports_resource>
+		        <rewrite>
+			        <product_lowstock_collection>Etailer_Backorders_Model_Reports_Resource_Product_Lowstock_Collection</product_lowstock_collection>
+		        </rewrite>
+	        </reports_resource>
         </models>
     </global>
     <admin>
