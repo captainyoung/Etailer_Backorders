@@ -42,8 +42,7 @@ class Etailer_Backorders_Model_Reports_Resource_Product_Lowstock_Collection exte
      */
     public function useNotifyStockQtyFilter($storeId = null)
     {
-      	Mage::log('My log entry');
-        $this->joinInventoryItem(array('qty'));
+      	$this->joinInventoryItem(array('qty'));
         $notifyStockExpr = $this->getConnection()->getCheckSql(
             $this->_getInventoryItemField('use_config_notify_stock_qty') . ' = 1',
             (int)Mage::getStoreConfig(Mage_CatalogInventory_Model_Stock_Item::XML_PATH_NOTIFY_STOCK_QTY, $storeId),
